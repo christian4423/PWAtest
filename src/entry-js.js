@@ -1,4 +1,10 @@
 /********************
+ *   Images  *
+ ********************/
+require("./images/featured-bg.gif")
+require("./images/RSGIS_white.png")
+
+/********************
  *   CSS Libraries  *
  ********************/
 /******************

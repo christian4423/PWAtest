@@ -1,3 +1,186 @@
-html{font-size:16px;font-size:100%;height:100%}html body{min-height:100%;background:#eee;background-attachment:fixed !important;background:url(http://www.ingham.org/Portals/_default/Skins/ingham/images/featured-bg.gif)}html body .NavContainer{border-bottom:5px solid #18453B}html body .NavContainer .nav-link{color:white !important;text-transform:uppercase;font-weight:bolder}html body .NavContainer .nav-link:hover{color:#F08521 !important}@media (max-width:576px){html body .NavContainer .navbar-brand{width:70%}}html body .NavContainer .navbar-brand img{width:100%;height:auto;max-width:410px}html body .NavContainer .dropdown-toggle::before{display:inline-block;width:0;height:0;margin-right:.355em;vertical-align:.255em;content:"";border-top:.3em solid;border-right:.3em solid transparent;border-bottom:0;border-left:.3em solid transparent;color:#F08521}html body .NavContainer .dropdown-toggle::after{content:"";border-top:none;border-right:none;border-bottom:none;border-left:none}html body .NavContainer .dropdown-menu{background-color:#222;background-image:url('http://www.ingham.org/Portals/_default/Skins/ingham/images/patternbg.png')}html body .NavContainer .dropdown-menu .dropdown-item{color:white;padding-top:10px;padding-bottom:10px}html body .NavContainer .dropdown-menu .dropdown-item:hover{color:#F08521;background-color:#222}html body .NavContainer .nav-item.Active span{color:#F08521}html body .NavContainer button{cursor:pointer}html body .NavContainer .tool{height:inherit;padding:.25rem 1.5rem;font-size:inherit;border:none;background:none}html body .NavContainer .tool:hover{text-decoration:none}html body .NavContainer .tool:hover span,html body .NavContainer .tool:hover a{text-decoration:none}html body .FooterContainer .__color{min-height:44px}html body .FooterContainer .__color--orange{background-color:#F08521}html body .FooterContainer .__color--teal{background-color:#267b7e}html body .FooterContainer .__color--green{background-color:#18453B}html body .FooterContainer .__logoBar{display:flex;align-items:center;justify-content:flex-end}html body .FooterContainer .__logoBar{color:white;background-image:url('http://www.rsgis.msu.edu/images/RSGIS_white_large.png');background-size:contain;background-repeat:no-repeat;background-position:center center}@media (max-width:768px){html body .FooterContainer .__logoBar{background-position:center center}}html body .rightPanelContainer{background-color:white}html body .leftPanelContainer{background-color:white;border-right:10px solid #F08521;display:flex;align-items:flex-start;justify-content:space-between;padding-right:0}html body .leftPanelContainer .infoPanel{padding:15px;width:100%;padding-bottom:0}html body .leftPanelContainer .infoPanel .icon{margin-right:0;vertical-align:inherit;transition:all .25s linear;display:flex;vertical-align:middle;align-items:center;justify-content:center}html body .leftPanelContainer .infoPanel .icon:hover{color:#F08521;text-shadow:0 0 5px white}html body .leftPanelContainer .nav{margin-bottom:1rem}html body .leftPanelContainer .nav-pills .nav-link{color:#267b7e;text-transform:capitalize}html body .leftPanelContainer .nav-pills .nav-link.active{color:white;background-color:#F08521}@media (max-width:576px){html body .leftPanelContainer{border-right:none;border-bottom:10px solid #F08521}html body .leftPanelContainer .infoPanel{padding-left:0}}@media (max-width:768px){html body .leftPanelContainer{border-right:none;border-bottom:10px solid #F08521}html body .leftPanelContainer .infoPanel{padding-left:0}}.hide_container{display:none !important}.btn-outline-warning{color:#F08521;border-color:#F08521}@media (max-width:768px){.row{margin-left:0;margin-right:0}}
+html {
+  font-size: 16px;
+  font-size: 100%;
+  height: 100%;
+}
+html body {
+  min-height: 100%;
+  background: #eee;
+  background-attachment: fixed !important;
+  background: url(/public/images/featured-bg.gif);
+}
+html body .NavContainer {
+  border-bottom: 5px solid #18453B;
+}
+html body .NavContainer .nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+html body .NavContainer .nav-link:hover {
+  color: #F08521 !important;
+}
+@media (max-width: 576px) {
+  html body .NavContainer .navbar-brand {
+    width: 70%;
+  }
+}
+html body .NavContainer .navbar-brand img {
+  width: 100%;
+  height: auto;
+  max-width: 410px;
+}
+html body .NavContainer .dropdown-toggle::before {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-right: 0.355em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+  color: #F08521;
+}
+html body .NavContainer .dropdown-toggle::after {
+  content: "";
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-left: none;
+}
+html body .NavContainer .dropdown-menu {
+  background-color: #222;
+  background-image: url('http://www.ingham.org/Portals/_default/Skins/ingham/images/patternbg.png');
+}
+html body .NavContainer .dropdown-menu .dropdown-item {
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+html body .NavContainer .dropdown-menu .dropdown-item:hover {
+  color: #F08521;
+  background-color: #222;
+}
+html body .NavContainer .nav-item.Active span {
+  color: black;
+}
+html body .NavContainer button {
+  cursor: pointer;
+}
+html body .NavContainer .tool {
+  height: inherit;
+  padding: .25rem 1.5rem;
+  font-size: inherit;
+  border: none;
+  background: none;
+}
+html body .NavContainer .tool:hover {
+  text-decoration: none;
+}
+html body .NavContainer .tool:hover span,
+html body .NavContainer .tool:hover a {
+  text-decoration: none;
+}
+html body .FooterContainer .__color {
+  min-height: 44px;
+}
+html body .FooterContainer .__color--orange {
+  background-color: #F08521;
+}
+html body .FooterContainer .__color--teal {
+  background-color: #267b7e;
+}
+html body .FooterContainer .__color--green {
+  background-color: #18453B;
+}
+html body .FooterContainer .__logoBar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+html body .FooterContainer .__logoBar {
+  color: white;
+  background-image: url(/public/images/RSGIS_white.png);
+  background-size: 140px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media (max-width: 768px) {
+  html body .FooterContainer .__logoBar {
+    background-position: center center;
+  }
+}
+html body .rightPanelContainer {
+  background-color: white;
+}
+html body .leftPanelContainer {
+  background-color: white;
+  border-right: 10px solid #F08521;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 0;
+}
+html body .leftPanelContainer .infoPanel {
+  padding: 15px;
+  width: 100%;
+  padding-bottom: 0;
+}
+html body .leftPanelContainer .infoPanel .icon {
+  margin-right: 0;
+  vertical-align: inherit;
+  transition: all 0.25s linear;
+  display: flex;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+}
+html body .leftPanelContainer .infoPanel .icon:hover {
+  color: #F08521;
+  text-shadow: 0 0 5px white;
+}
+html body .leftPanelContainer .nav {
+  margin-bottom: 1rem;
+}
+html body .leftPanelContainer .nav-pills .nav-link {
+  color: #267b7e;
+  text-transform: capitalize;
+}
+html body .leftPanelContainer .nav-pills .nav-link.active {
+  color: black;
+  background-color: #F08521;
+}
+@media (max-width: 576px) {
+  html body .leftPanelContainer {
+    border-right: none;
+    border-bottom: 10px solid #F08521;
+  }
+  html body .leftPanelContainer .infoPanel {
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  html body .leftPanelContainer {
+    border-right: none;
+    border-bottom: 10px solid #F08521;
+  }
+  html body .leftPanelContainer .infoPanel {
+    padding-left: 0;
+  }
+}
+.hide_container {
+  display: none !important;
+}
+.btn-outline-warning {
+  color: #F08521;
+  border-color: #F08521;
+}
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 
 /*# sourceMappingURL=bundle.css.map*/

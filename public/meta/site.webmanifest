@@ -1,14 +1,27 @@
 {
     "name": "Enviroweather",
-    "short_name": "Enviroweather",
+    "short_name": "Envweather",
+    "lang": "en-US",
+    "description": "This site is used for enviroweather.",
     "icons": [
         {
-            "src": "/android-chrome-144x144.png",
-            "sizes": "144x144",
+            "src": "/public/meta/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/public/meta/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/public/meta/android-chrome-512x512.png",
+            "sizes": "512x512",
             "type": "image/png"
         }
     ],
     "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "background_color": "#18453B",
+    "start_url": "/",
     "display": "standalone"
 }

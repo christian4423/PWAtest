@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import HomeComponent from "../HomeComponent";
 import { setActiveTab, toggleLeftPanel } from "../../actions/layoutActions";
+import Loadable from "react-loadable";
+
+
+const LoadableHomeComponent = Loadable({
+    loader: () => import("../HomeComponent"),
+    loading: HomeComponent
+});
+
 class Body extends Component {
     constructor(props) {
         super(props);
@@ -62,7 +70,7 @@ class Body extends Component {
                         </div>
                     </div>
                     <div className={this.getRightPanelClassName()}>
-                        <HomeComponent />
+                        <LoadableHomeComponent />
                     </div>
                 </div>
             </div>

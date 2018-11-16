@@ -17,7 +17,7 @@ module.exports = {
                 test: /\.(jsx|js)$/,
                 loader: "babel-loader",
                 options: {
-                    presets: [ "@babel/preset-env","@babel/preset-react"],
+                    presets: ["@babel/preset-env", "@babel/preset-react"],
                     plugins: ["react-html-attrs", "transform-class-properties"],
                 }
             },
@@ -32,14 +32,21 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    "css-loader"
+                    "css-loader",
+                    'resolve-url-loader'
                 ]
             },
             {
                 test: /\.less$/,
                 use: [MiniCssExtractPlugin.loader,
                     "css-loader",
-                    "less-loader"
+                    "less-loader",
+                {
+                    loader: 'resolve-url-loader',
+                    options: {
+                        absolute: "/public/"
+                    }
+                }
                 ]
             },
             {
@@ -48,7 +55,7 @@ module.exports = {
                     loader: "file-loader",
                     options: {
                         limit: 500,
-                        name: "/img/[name].[ext]"
+                        name: "/images/[name].[ext]"
                     }
                 }]
             },
@@ -88,5 +95,10 @@ module.exports = {
         new CopyWebpackPlugin([
             { from: "./src/meta", to: "./meta" },
         ])
-    ]
+    ],
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        }
+    }
 };
