@@ -1,0 +1,66 @@
+.rightPanelContainer{
+    background-color:white;
+}
+.leftPanelContainer {
+    background-color:white;
+    border-right: 10px solid @orange;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 0;
+    .infoPanel {
+        padding: 15px;
+        width: 100%;
+        
+        padding-bottom:0;
+        .icon {
+            margin-right: 0;
+            vertical-align: inherit;
+            transition: all 0.25s linear;
+            display: flex;
+            vertical-align: middle;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+                color: @orange;
+                text-shadow: 0 0 5px white;
+            }
+        }
+    }
+    .nav {
+        margin-bottom: 1rem;
+    }
+    .nav-pills {
+        .nav-link {
+            color: @teal;
+            text-transform: capitalize;
+            &.active {
+                color: white;
+                background-color: @orange;
+            }
+        }
+    }
+}
+
+
+
+@media(max-width: @sm) {
+
+    .leftPanelContainer {
+        border-right: none;
+        border-bottom: 10px solid @orange;
+        .infoPanel{
+            padding-left: 0;
+        }
+    }
+}
+
+@media(max-width: @md) {
+    .leftPanelContainer {
+        border-right: none;
+        border-bottom: 10px solid @orange;
+        .infoPanel{
+            padding-left: 0;
+        }
+    }
+}

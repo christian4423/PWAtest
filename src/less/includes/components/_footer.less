@@ -1,0 +1,30 @@
+.FooterContainer {
+    .__color {
+        min-height: 44px;
+        &--orange {
+            background-color: @orange;
+        }
+        &--teal {
+            background-color: @teal;
+        }
+        &--green {
+            background-color: @green;
+        }
+    }
+    .__logoBar{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .__logoBar{
+        color: white;
+        background-image: url('http://www.rsgis.msu.edu/images/RSGIS_white_large.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        @media(max-width: @md){
+            background-position: center center;
+        }
+    }
+}

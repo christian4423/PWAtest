@@ -1,0 +1,6 @@
+extends layout.pug
+block content  
+  p#nojs="This webpage requires javascript to run."
+  #root
+block scripts
+  script(type='text/javascript', src='/public/bundle.js')
